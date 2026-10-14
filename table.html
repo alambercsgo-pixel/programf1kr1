@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Формула 1 — таблица</title>
+    <style>
+        a:hover {
+            background-color: yellow;
+        }
+
+        a.active {
+            background-color: red;
+        }
+
+
+        table {
+            background-image: url('image/background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1><a href="index.html"><img src="image/f1.png" width="120" alt="На главную"></a> Formula 1 </h1>
+<ul>
+    <li> <a href='index.html'>  Главная страница </a> </li>
+    <li> <a href='info.html'>  Информационная страница с главами </a> </li> <li> <a href="info.html#teams">Команды и чемпионы</a> </li>
+    <li> <a href='test_img.html'> Фото </a> </li>
+    <li> <a href="form.html"> Форма </a> </li>
+    <li> <a href='passport.html'>Паспорт </a> </li>
+    <li> <a href='table.html'  class="active">Таблица </a> </li>
+    <li> <a href='task.html'>Задача </a> </li>
+    <li> <a href='DOM.html'>Считывание из DOM</a> </li>
+    <li> <a href="https://www.formula1.com/" target="_blank"> Официальный сайт Формулы 1 </a> </li>
+
+</ul>
+
+<h2 align="center">Формула 1 в таблице</h2>
+
+<table width="600" align="center" bgcolor="#808080"
+       border="2" cellspacing="15" cellpadding="10">
+
+    <tr height="100">
+        <td align="right" valign="top">
+            <img src="image/helmet.jpg" height="50" alt="Шлем гонщика"><br>
+            <font size="2">Шлем гонщика</font>
+        </td>
+
+        <td></td>
+
+        <td background="image/flag.jpg">
+            <b><font color="red" size="5">ФИНИШ</font></b>
+        </td>
+    </tr>
+
+    <tr height="20">
+        <td colspan="3" align="center">Чемпионы мира 2014–2024: Хэмилтон (2014–2020, кроме 2016), Ферстаппен (2021–2024)</td>
+    </tr>
+
+    <tr>
+        <td width="400" height="300">Болид Формулы 1 весит около 770 кг вместе с пилотом (регламент 2026 года), разгоняется до 100 км/ч менее чем за 3 секунды, а его максимальная скорость превышает 350 км/ч</td>
+        <td bgcolor="green">Зелёный флаг — трасса свободна</td>
+    </tr>
+
+    <tr>
+        <td width="50%" height="200">
+            <table border="1" width="100%" cellspacing="0" cellpadding="20">
+                <tr>
+                    <td><a href="https://www.formula1.com/en/results/2024/drivers" target="_blank"><img src="image/podium.jpg" alt="Подиум" width="90" height="90"></a></td>
+                    <td>1 место — 25 очков</td>
+                </tr>
+                <tr>
+                    <td>2 место — 18 очков</td>
+                    <td>3 место — 15 очков</td>
+                </tr>
+            </table>
+        </td>
+
+        <td width="50%" align="right" valign="middle">
+            <img src="image/lights.jpg" hspace="15" vspace="15" alt="Стартовые огни" width="300" >
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>
