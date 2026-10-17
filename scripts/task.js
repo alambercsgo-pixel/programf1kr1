@@ -2,20 +2,25 @@ let result;
 let check = false;
 
 function verify() {
-    let D = parseFloat(document.getElementById('D').value);
     let A = parseFloat(document.getElementById('A').value);
-    console.log(D, A);
+    let B = parseFloat(document.getElementById('B').value);
+    let C = parseFloat(document.getElementById('C').value);
+    console.log(A, B, C);
 
-    if (isNaN(D) || isNaN(A) || D <= 0 || A <= 0) {
-        result = "Введите положительные числа";
+    if (isNaN(A) || isNaN(B) || isNaN(C)) {
+        result = "Введите все три числа";
         check = false;
     }
-    else if (A * Math.sqrt(2) <= D) {
-        result = "Можно выпилить";
+    else if (A < B && B < C) {
+        result = "Выполняется неравенство A < B < C";
+        check = true;
+    }
+    else if (A < B && B > C) {
+        result = "Выполняется неравенство A < B > C";
         check = true;
     }
     else {
-        result = "Нельзя выпилить";
+        result = "Ни одно из неравенств не выполняется";
         check = false;
     }
     document.getElementById("result").value = result;
@@ -25,7 +30,7 @@ function send() {
     if (check) {
         document.getElementById("UserEnter").submit();
     } else {
-        alert("Брус выпилить нельзя или результат не проверен. Измените данные и нажмите «Проверить»");
+        alert("Ни одно неравенство не выполняется или результат не проверен. Измените данные и нажмите «Проверить»");
     }
 }
 
